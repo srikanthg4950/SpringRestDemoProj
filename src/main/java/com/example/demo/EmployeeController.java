@@ -15,6 +15,7 @@ public class EmployeeController
     @GetMapping(path="/test", produces = MediaType.TEXT_PLAIN_VALUE )
     public String getEmployees() 
     {
+    	System.out.println("--getEmployees() called--");
         //return employeeDao.getAllEmployees();
     	
     	return "employee demo";
